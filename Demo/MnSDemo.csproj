@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="assets\basket.png" />
     <None Remove="assets\lock.png" />
     <None Remove="assets\logo.png" />
     <None Remove="assets\more.jpg" />
@@ -18,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="assets\basket.png" />
     <Resource Include="assets\lock.png" />
     <Resource Include="assets\logo.png" />
     <Resource Include="assets\more.jpg" />

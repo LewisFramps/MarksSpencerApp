@@ -23,4 +23,14 @@ public partial class Home : Page
     {
         InitializeComponent();
     }
+
+    private void StackPanel1_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+    {
+        NavigationService.Navigate(new Uri("Product.xaml?id=1", UriKind.Relative));
+    }
+
+    private void StackPanel2_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+    {
+        NavigationService.Navigate(new Uri("Product.xaml?id=2", UriKind.Relative));
+    }
 }
