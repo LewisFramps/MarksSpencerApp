@@ -18,6 +18,10 @@
     <None Remove="assets\search.png" />
     <None Remove="assets\search2.png" />
     <None Remove="assets\star.png" />
+    <None Remove="assets\towel1.jpg" />
+    <None Remove="assets\towel2.jpg" />
+    <None Remove="assets\towel3.jpg" />
+    <None Remove="assets\towel4.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -31,6 +35,10 @@
     <Resource Include="assets\search.png" />
     <Resource Include="assets\search2.png" />
     <Resource Include="assets\star.png" />
+    <Resource Include="assets\towel1.jpg" />
+    <Resource Include="assets\towel2.jpg" />
+    <Resource Include="assets\towel3.jpg" />
+    <Resource Include="assets\towel4.jpg" />
   </ItemGroup>
 
 </Project>
