@@ -19,7 +19,7 @@ namespace MnSDemo;
 /// </summary>
 public partial class Hint : Page
 {
-    int hint;
+    int hintNumber;
 
     public Hint()
     {
@@ -29,7 +29,21 @@ public partial class Hint : Page
 
     private void Page_Loaded(object sender, RoutedEventArgs e)
     {
-        hint = int.Parse(NavigationService.CurrentSource.ToString()[^1..]);
-        TitleBlock.Text = $"Hint {hint}/6";
+        hintNumber = NavigationService.CurrentSource.ToString()[^1] == '1' ? 1 : 6;
+        TitleBlock.Text = $"Hint {hintNumber}/6";
+        HintText.Text = hintNumber == 1 ? "What gets wetter the more it dries? " : "I’m tall when I’m young, and I’m short when I’m old. What am I? ";
+    }
+
+    private void TextBox_KeyDown(object sender, KeyEventArgs e)
+    {
+        if (e.Key == Key.Return)
+        {
+            NavigationService.Navigate(new Uri($"Search.xaml?q={SearchBox.Text}", UriKind.Relative));
+        }
+    }
+
+    private void Button_Click(object sender, RoutedEventArgs e)
+    {
+        NavigationService.Navigate(new Uri($"Search.xaml?q={SearchBox.Text}", UriKind.Relative));
     }
 }

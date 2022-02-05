@@ -12,9 +12,11 @@
     <None Remove="assets\lock.png" />
     <None Remove="assets\logo.png" />
     <None Remove="assets\more.jpg" />
+    <None Remove="assets\pig.png" />
     <None Remove="assets\prod1.jpg" />
     <None Remove="assets\prod2.jpg" />
     <None Remove="assets\search.png" />
+    <None Remove="assets\search2.png" />
     <None Remove="assets\star.png" />
   </ItemGroup>
 
@@ -23,9 +25,11 @@
     <Resource Include="assets\lock.png" />
     <Resource Include="assets\logo.png" />
     <Resource Include="assets\more.jpg" />
+    <Resource Include="assets\pig.png" />
     <Resource Include="assets\prod1.jpg" />
     <Resource Include="assets\prod2.jpg" />
     <Resource Include="assets\search.png" />
+    <Resource Include="assets\search2.png" />
     <Resource Include="assets\star.png" />
   </ItemGroup>
 
