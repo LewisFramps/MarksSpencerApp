@@ -28,24 +28,31 @@
                     <Image Height="45" Width="80" Source="assets/more.jpg"/>
                 </StackPanel>
             </StackPanel>
-            <StackPanel>
-                <TextBlock x:Name="TitleBlock" Margin="0,10,0,0" FontSize="36" Padding="15,15,0,0" Background="#FFFACDF6" Height="80" VerticalAlignment="Stretch">
+            <ScrollViewer>
+                <StackPanel>
+                    <TextBlock x:Name="TitleBlock" Margin="0,10,0,0" FontSize="36" Padding="15,15,0,0" Background="#FFFACDF6" Height="80" VerticalAlignment="Stretch">
                 Dyson Hoover
-                </TextBlock>
-                <StackPanel DockPanel.Dock="Top" Margin="10,10,10,10" Height="300">
-                    <StackPanel.Background>
-                        <ImageBrush x:Name="BackgroundImage" ImageSource="assets/prod1.jpg"/>
-                    </StackPanel.Background>
-                </StackPanel>
-                <TextBlock Margin="20" TextWrapping="WrapWithOverflow" FontSize="18">
+                    </TextBlock>
+                    <StackPanel DockPanel.Dock="Top" Margin="10,10,10,10" Height="300">
+                        <StackPanel.Background>
+                            <ImageBrush x:Name="BackgroundImage" ImageSource="assets/prod1.jpg"/>
+                        </StackPanel.Background>
+                    </StackPanel>
+                    <TextBlock Margin="20" TextWrapping="WrapWithOverflow" FontSize="18">
                     Here goes product details <LineBreak/>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae neque non odio mattis laoreet in id felis. Aenean quis est rhoncus, rutrum tellus sed, eleifend nisl.
-                </TextBlock>
-                <Button Margin="25,0,25,0" Content="Add to Bag" FontSize="22" Click="Button_Click"/>
-                <TextBlock Margin="20" TextWrapping="WrapWithOverflow" FontSize="32">
-                Customer Reviews
-                </TextBlock>
-            </StackPanel>
+                    </TextBlock>
+                    <Button Margin="25,0,25,0" Content="Add to Bag" FontSize="22" Click="Button_Click"/>
+                    <TextBlock Margin="20,20,20,10" TextWrapping="WrapWithOverflow" FontSize="32">
+                        Customer Reviews (0)
+                    </TextBlock>
+                    <TextBlock Margin="20,0,20,0" TextWrapping="WrapWithOverflow" FontSize="18">
+                        No reviews yet. Be the first to leave a comment!
+                    </TextBlock>
+                    <TextBlock x:Name="NextHintBox" TextAlignment="Right" Margin="20,50,20,10" Foreground="#FF808080" Text="First letter: C. Click here for the next hint... >" MouseLeftButtonUp="NextHintBox_MouseLeftButtonUp"/>
+                </StackPanel>
+
+            </ScrollViewer>
         </DockPanel>
         <Border x:Name="Popup" Padding="5" Margin="9,25,9,550" BorderThickness="1" Background="#C0FFFFFF" CornerRadius="15" Visibility="Hidden" MouseLeftButtonUp="Popup_MouseLeftButtonUp">
             <TextBlock TextWrapping="Wrap"  FontSize="28" Padding="15,15,15,15">

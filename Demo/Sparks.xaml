@@ -1,0 +1,72 @@
+﻿<Page x:Class="MnSDemo.Sparks"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MnSDemo"
+      mc:Ignorable="d"
+      WindowHeight="800" WindowWidth="500"
+      d:DesignHeight="800" d:DesignWidth="500"
+      Title="Sparks">
+    <Grid>
+        <DockPanel Background="#FFFFD9F3">
+            <StackPanel Background="#FFFACDF6" Orientation="Horizontal" DockPanel.Dock="Bottom" Margin="10,0,10,0">
+                <StackPanel Margin="10" VerticalAlignment="Center" >
+                    <Image Height="50" Width="50" Source="assets/logo.png"/>
+                </StackPanel>
+                <StackPanel Margin="10" VerticalAlignment="Center">
+                    <Image Height="45" Width="90" Source="assets/search.png"/>
+                </StackPanel>
+                <StackPanel Margin="10" VerticalAlignment="Center">
+                    <Image Height="45" Width="90" Source="assets/star.png"/>
+                </StackPanel>
+                <StackPanel Margin="10" VerticalAlignment="Center">
+                    <Image Height="45" Width="80" Source="assets/basket.png"/>
+                </StackPanel>
+                <StackPanel Margin="10" VerticalAlignment="Center">
+                    <Image Height="45" Width="80" Source="assets/more.jpg"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock Margin="0,10,0,0" FontSize="36" Padding="15,30,0,0" Background="#FFFACDF6" Height="105" VerticalAlignment="Stretch">
+                Welcome Mx F Lastname
+                </TextBlock>
+                <StackPanel Margin="50,30,50,10">
+                    <StackPanel Background="#FF3A7314">
+                        <TextBlock FontSize="56" TextAlignment="Center" Foreground="#FFFFFFFF" Margin="0,10,10,0">SP☆RKS</TextBlock>
+                    </StackPanel>
+                    <StackPanel Background="#FFFFFFFF">
+                        <TextBlock FontSize="56" TextAlignment="Center" Margin="0,10,0,20">|| ||| | |||| || || || |</TextBlock>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Margin="20,20,20,0" Height="50">
+                    <StackPanel VerticalAlignment="Center" Margin="0,0,0,0" Background="#FFC0C0C0">
+                        <TextBlock Margin="30,10,30,10" FontSize="26">New Offers</TextBlock>
+                    </StackPanel>
+                    <StackPanel VerticalAlignment="Center" Margin="0,0,0,0" Background="#FFFFFFFF">
+                        <TextBlock Margin="30,10,30,10" FontSize="26">Redeem Code</TextBlock>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Margin="39,0,39,0" Background="#FFFFFFFF" Height="250">
+                    <TextBlock Margin="20" TextAlignment="Center" FontSize="20" TextWrapping="Wrap">Enter your unscrambled code word below to win!</TextBlock>
+                    <TextBox x:Name="CodeBox" Margin="20" FontSize="32" TextAlignment="Center" Background="#FFF0F0F0" KeyDown="CodeBox_KeyDown"></TextBox>
+                </StackPanel>
+            </StackPanel>
+        </DockPanel>
+        <Border x:Name="Popup" Padding="5" Margin="9,230,9,70" BorderThickness="1" Background="#F0FFFFFF" CornerRadius="15" Visibility="Hidden">
+            <StackPanel>
+                <TextBlock TextAlignment="Center"  TextWrapping="Wrap"  FontSize="36" Padding="15,15,15,15">
+            <Bold>CONGRATULATIONS!</Bold>
+                </TextBlock>
+                <TextBlock TextAlignment="Center"  TextWrapping="Wrap"  FontSize="24" Padding="15,0,15,15">
+                    You found all of Percy's hidden letters!</TextBlock>
+                <TextBlock TextAlignment="Center"  TextWrapping="Wrap"  FontSize="24" Padding="15,0,15,15">
+                Here's 20% off for your next purchase in store or online with us!</TextBlock>
+                <TextBlock TextAlignment="Center"  TextWrapping="Wrap"  FontSize="24" Padding="15,0,15,15">
+                Simply click below to add this reward to your account and follow the instructions provided to use your discount at checkout.
+                </TextBlock>
+                <Button x:Name="ApplyButton" Click="ApplyButton_Click" Margin="20" FontSize="32">Add to Account</Button>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>

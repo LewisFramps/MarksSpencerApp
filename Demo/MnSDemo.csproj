@@ -9,6 +9,10 @@
 
   <ItemGroup>
     <None Remove="assets\basket.png" />
+    <None Remove="assets\candle1.jpg" />
+    <None Remove="assets\candle2.jpg" />
+    <None Remove="assets\candle3.jpg" />
+    <None Remove="assets\candle4.jpg" />
     <None Remove="assets\lock.png" />
     <None Remove="assets\logo.png" />
     <None Remove="assets\more.jpg" />
@@ -26,6 +30,10 @@
 
   <ItemGroup>
     <Resource Include="assets\basket.png" />
+    <Resource Include="assets\candle1.jpg" />
+    <Resource Include="assets\candle2.jpg" />
+    <Resource Include="assets\candle3.jpg" />
+    <Resource Include="assets\candle4.jpg" />
     <Resource Include="assets\lock.png" />
     <Resource Include="assets\logo.png" />
     <Resource Include="assets\more.jpg" />

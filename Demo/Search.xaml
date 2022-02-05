@@ -42,7 +42,7 @@
                             <TextBlock x:Name="Title1" Text="Towel 1" FontWeight="Bold" FontSize="18"></TextBlock>
                             <TextBlock TextWrapping="Wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies euismod ipsum, nec tempus mi dignissim vel. Praesent tempus bibendum urna non hendrerit. Duis ut eleifend turpis.</TextBlock>
                         </StackPanel>
-                        <StackPanel Orientation="Vertical" Margin="0,5,10,0" MouseLeftButtonUp="StackPane2_MouseLeftButtonUp">
+                        <StackPanel Orientation="Vertical" Margin="0,5,10,0">
                             <Image x:Name="Image2" Source="assets/towel2.jpg"></Image>
                             <TextBlock x:Name="Title2" Text="Towel 2" FontWeight="Bold" FontSize="18"></TextBlock>
                             <TextBlock TextWrapping="Wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies euismod ipsum, nec tempus mi dignissim vel. Praesent tempus bibendum urna non hendrerit. Duis ut eleifend turpis.</TextBlock>
@@ -54,7 +54,7 @@
                             <TextBlock x:Name="Title3" Text="Towel 3" FontWeight="Bold" FontSize="18"></TextBlock>
                             <TextBlock TextWrapping="Wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies euismod ipsum, nec tempus mi dignissim vel. Praesent tempus bibendum urna non hendrerit. Duis ut eleifend turpis.</TextBlock>
                         </StackPanel>
-                        <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Vertical" MouseLeftButtonUp="StackPanel4_MouseLeftButtonUp">
                             <Image x:Name="Image4" Source="assets/towel4.jpg"></Image>
                             <TextBlock x:Name="Title4" Text="Towel 4" FontWeight="Bold" FontSize="18"></TextBlock>
                             <TextBlock TextWrapping="Wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies euismod ipsum, nec tempus mi dignissim vel. Praesent tempus bibendum urna non hendrerit. Duis ut eleifend turpis.</TextBlock>

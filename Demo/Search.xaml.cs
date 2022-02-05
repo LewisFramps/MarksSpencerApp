@@ -53,7 +53,7 @@ public partial class Search : Page
         }
     }
 
-    private void StackPane2_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+    private void StackPanel4_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
     {
         if (searchTermLower == "candle")
         {

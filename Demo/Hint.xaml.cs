@@ -38,12 +38,15 @@ public partial class Hint : Page
     {
         if (e.Key == Key.Return)
         {
-            NavigationService.Navigate(new Uri($"Search.xaml?q={SearchBox.Text}", UriKind.Relative));
+            Button_Click(sender, e);
         }
     }
 
     private void Button_Click(object sender, RoutedEventArgs e)
     {
-        NavigationService.Navigate(new Uri($"Search.xaml?q={SearchBox.Text}", UriKind.Relative));
+        if (SearchBox.Text.ToLower() == "towel" || SearchBox.Text.ToLower() == "candle")
+        {
+            NavigationService.Navigate(new Uri($"Search.xaml?q={SearchBox.Text}", UriKind.Relative));
+        }
     }
 }

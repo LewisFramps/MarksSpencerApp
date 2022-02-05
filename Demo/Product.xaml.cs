@@ -30,22 +30,40 @@ public partial class Product : Page
 
     private void Page_Loaded(object sender, RoutedEventArgs e)
     {
-        id = NavigationService.CurrentSource.ToString()[^1] == '1' ? 1 : 2;
-        if (id == 1)
+        id = int.Parse(NavigationService.CurrentSource.ToString()[^1..]);
+        switch (id)
         {
-            TitleBlock.Text = "Product Name 1";
-            BackgroundImage.ImageSource = (ImageSource)new ImageSourceConverter().ConvertFromString("../../../assets/prod1.jpg");
-        }
-        else
-        {
-            TitleBlock.Text = "Product Name 2";
-            BackgroundImage.ImageSource = (ImageSource)new ImageSourceConverter().ConvertFromString("../../../assets/prod2.jpg");
+            case 1:
+                TitleBlock.Text = "Product Name 1";
+                BackgroundImage.ImageSource = (ImageSource)new ImageSourceConverter().ConvertFromString("../../../assets/prod1.jpg");
+                NextHintBox.Visibility = Visibility.Hidden;
+                break;
+            case 2:
+                TitleBlock.Text = "Product Name 2";
+                BackgroundImage.ImageSource = (ImageSource)new ImageSourceConverter().ConvertFromString("../../../assets/prod2.jpg");
+                NextHintBox.Visibility = Visibility.Hidden;
+                break;
+            case 3:
+                TitleBlock.Text = "Towel 3";
+                BackgroundImage.ImageSource = (ImageSource)new ImageSourceConverter().ConvertFromString("../../../assets/towel3.jpg");
+                NextHintBox.Text = "First letter: P. Click here for the next hint... >";
+                break;
+            case 4:
+                TitleBlock.Text = "Candle 4";
+                BackgroundImage.ImageSource = (ImageSource)new ImageSourceConverter().ConvertFromString("../../../assets/candle4.jpg");
+                NextHintBox.Text = "Final letter: T. Redeem your code in the Sparks hub! >";
+                break;
+            default:
+                break;
         }
     }
 
     private void Button_Click(object sender, RoutedEventArgs e)
     {
-        Popup.Visibility = Visibility.Visible;
+        if (id < 3)
+        {
+            Popup.Visibility = Visibility.Visible;
+        }
     }
 
     private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
@@ -57,5 +75,17 @@ public partial class Product : Page
     private void Popup_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
     {
         NavigationService.Navigate(new Uri("Hint.xaml?hint=1", UriKind.Relative));
+    }
+
+    private void NextHintBox_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+    {
+        if (id == 3)
+        {
+            NavigationService.Navigate(new Uri("Hint.xaml?hint=6", UriKind.Relative));
+        }
+        else
+        {
+            NavigationService.Navigate(new Uri("Sparks.xaml", UriKind.Relative));
+        }
     }
 }
