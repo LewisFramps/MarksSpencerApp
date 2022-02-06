@@ -9,8 +9,8 @@
       d:DesignHeight="800" d:DesignWidth="500"
       Title="Home">
 
-    <DockPanel Background="#FFFFD9F3">
-        <StackPanel Background="#FFFACDF6" Orientation="Horizontal" DockPanel.Dock="Bottom" Margin="10,0,10,0">
+    <DockPanel Background="FloralWhite">
+        <StackPanel Background="FloralWhite" Orientation="Horizontal" DockPanel.Dock="Bottom" Margin="10,0,10,0">
             <StackPanel Margin="10" VerticalAlignment="Center" >
                 <Image Height="50" Width="50" Source="assets/logo.png"/>
             </StackPanel>
@@ -28,19 +28,18 @@
             </StackPanel>
         </StackPanel>
         <StackPanel>
-            <TextBlock Margin="0,10,0,0" FontSize="36" Padding="15,30,0,0" Background="#FFFACDF6" Height="105" VerticalAlignment="Stretch">
-                Hello, Mx F Lastname!
-            </TextBlock>
+            <TextBlock Margin="0,10,0,0" FontSize="36" Padding="15,30,0,0" Background="FloralWhite" Height="105" VerticalAlignment="Stretch">
+               Recommended for you</TextBlock>
             <StackPanel DockPanel.Dock="Top" Margin="10,10,10,10" MouseLeftButtonUp="StackPanel1_MouseLeftButtonUp">
                 <StackPanel.Background>
                     <ImageBrush ImageSource="assets/prod1.jpg"/>
                 </StackPanel.Background>
                 <TextBlock Margin="10,10,10,0" Foreground="White" FontSize="40" Padding="0,100,0,0">
-                    Product Name 1
+                    Casual leather shoes
                 </TextBlock>
                 <TextBlock Margin="10,0,10,10" TextWrapping="WrapWithOverflow" FontSize="20" Foreground="White">
-                    Product details<LineBreak/>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae neque non odio mattis laoreet in id felis. Aenean quis est rhoncus, rutrum tellus sed, eleifend nisl.
+                    Product description<LineBreak/>
+                   Crafted from our refined faux suede, you rely on our Derby shoes for both casual and smarter occasions. They have a classic lace-up fastening!
                 </TextBlock>
             </StackPanel>
             <StackPanel DockPanel.Dock="Top" Margin="10,0,10,10" MouseLeftButtonUp="StackPanel2_MouseLeftButtonUp">
@@ -48,11 +47,11 @@
                     <ImageBrush ImageSource="assets/prod2.jpg"/>
                 </StackPanel.Background>
                 <TextBlock Margin="10,10,10,0" Foreground="White" FontSize="40" Padding="0,100,0,0">
-                    Product Name 2
+                    Derby Shoes
                 </TextBlock>
                 <TextBlock Margin="10,0,10,10" TextWrapping="WrapWithOverflow" FontSize="20" Foreground="White">
-                    Product details<LineBreak/>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae neque non odio mattis laoreet in id felis. Aenean quis est rhoncus, rutrum tellus sed, eleifend nisl.
+                    Description<LineBreak/>
+                  Crafted from our refined faux suede, you rely on our Derby shoes for both casual and smarter occasions. They have a classic lace-up fastening and our speical Freshfeet finish to help odours at bay.
                 </TextBlock>
             </StackPanel>
         </StackPanel>

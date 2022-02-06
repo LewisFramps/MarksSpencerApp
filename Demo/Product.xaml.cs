@@ -34,22 +34,22 @@ public partial class Product : Page
         switch (id)
         {
             case 1:
-                TitleBlock.Text = "Product Name 1";
+                TitleBlock.Text = "Leather shoes ";
                 BackgroundImage.ImageSource = (ImageSource)new ImageSourceConverter().ConvertFromString("../../../assets/prod1.jpg");
                 NextHintBox.Visibility = Visibility.Hidden;
                 break;
             case 2:
-                TitleBlock.Text = "Product Name 2";
+                TitleBlock.Text = "Derby Shoes ";
                 BackgroundImage.ImageSource = (ImageSource)new ImageSourceConverter().ConvertFromString("../../../assets/prod2.jpg");
                 NextHintBox.Visibility = Visibility.Hidden;
                 break;
             case 3:
-                TitleBlock.Text = "Towel 3";
+                TitleBlock.Text = "Towel ";
                 BackgroundImage.ImageSource = (ImageSource)new ImageSourceConverter().ConvertFromString("../../../assets/towel3.jpg");
                 NextHintBox.Text = "First letter: P. Click here for the next hint... >";
                 break;
             case 4:
-                TitleBlock.Text = "Candle 4";
+                TitleBlock.Text = "Candle ";
                 BackgroundImage.ImageSource = (ImageSource)new ImageSourceConverter().ConvertFromString("../../../assets/candle4.jpg");
                 NextHintBox.Text = "Final letter: T. Redeem your code in the Sparks hub! >";
                 break;
