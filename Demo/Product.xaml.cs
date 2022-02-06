@@ -34,23 +34,27 @@ public partial class Product : Page
         switch (id)
         {
             case 1:
-                TitleBlock.Text = "Leather shoes ";
+                TitleBlock.Text = "Casual Leather shoes ";
                 BackgroundImage.ImageSource = (ImageSource)new ImageSourceConverter().ConvertFromString("../../../assets/prod1.jpg");
+                DescriptionBlock.Text = "Combine smart style with ultimate comfort in these shoes. Smartstep technology used to insert cusioning into the sole!\r\nCrafted from our refined faux suede, you rely on our Derby shoes for both casual and smarter occasions. They have a classic lace-up fastening!";
                 NextHintBox.Visibility = Visibility.Hidden;
                 break;
             case 2:
                 TitleBlock.Text = "Derby Shoes ";
                 BackgroundImage.ImageSource = (ImageSource)new ImageSourceConverter().ConvertFromString("../../../assets/prod2.jpg");
+                DescriptionBlock.Text = "Combine smart style with ultimate comfort in these shoes. Smartstep technology used to insert cusioning into the sole!\r\nCrafted from our refined faux suede, you rely on our Derby shoes for both casual and smarter occasions. They have a classic lace-up fastening and our speical Freshfeet finish to help odours at bay.";
                 NextHintBox.Visibility = Visibility.Hidden;
                 break;
             case 3:
                 TitleBlock.Text = "Towel ";
                 BackgroundImage.ImageSource = (ImageSource)new ImageSourceConverter().ConvertFromString("../../../assets/towel3.jpg");
+                DescriptionBlock.Text = "Welcome the summer with this beach towel. Made from soft and absorbent pure cotton. Our chlorine resistant StayNew™ technology keeps the colours and finish looking fresh, wash after wash. Our new efficient size is easy to pack.";
                 NextHintBox.Text = "First letter: P. Click here for the next hint... >";
                 break;
             case 4:
                 TitleBlock.Text = "Candle ";
                 BackgroundImage.ImageSource = (ImageSource)new ImageSourceConverter().ConvertFromString("../../../assets/candle4.jpg");
+                DescriptionBlock.Text = "Add to the ambience of your room with this light-up candle.";
                 NextHintBox.Text = "Final letter: T. Redeem your code in the Sparks hub! >";
                 break;
             default:

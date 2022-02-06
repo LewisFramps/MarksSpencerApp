@@ -39,11 +39,11 @@
                             <ImageBrush x:Name="BackgroundImage" ImageSource="assets/prod1.jpg"/>
                         </StackPanel.Background>
                     </StackPanel>
-                    <TextBlock Margin="20" TextWrapping="WrapWithOverflow" FontSize="18">
+                    <TextBlock Margin="20,20,20,0" TextWrapping="WrapWithOverflow" FontSize="18">
                     <Bold>Product Description</Bold><LineBreak/>
-                    Marks and Spencers collection <LineBreak/><LineBreak/>
-                    Combine smart style with ultimate comfort in these shoes. Smartstep technology used to insert cusioning into the sole!
+                    Marks and Spencers collection
                     </TextBlock>
+                    <TextBlock Margin="20" TextWrapping="WrapWithOverflow" FontSize="18" x:Name="DescriptionBlock" Text="Combine smart style with ultimate comfort in these shoes. Smartstep technology used to insert cusioning into the sole!"></TextBlock>
                     <Button Margin="25,0,25,0" Content="Add to Bag" FontSize="22" Click="Button_Click"/>
                     <TextBlock Margin="20,20,20,10" TextWrapping="WrapWithOverflow" FontSize="24">
                         Customer Reviews (0)
@@ -56,7 +56,7 @@
 
             </ScrollViewer>
         </DockPanel>
-        <Border x:Name="Popup" Padding="5" Margin="9,25,9,550" BorderThickness="1" Background="White" CornerRadius="15" Visibility="Hidden" MouseLeftButtonUp="Popup_MouseLeftButtonUp">
+        <Border x:Name="Popup" Padding="5" Margin="9,25,26,550" BorderThickness="1" Background="White" CornerRadius="15" Visibility="Hidden" MouseLeftButtonUp="Popup_MouseLeftButtonUp">
             <TextBlock TextWrapping="Wrap"  FontSize="22" Padding="15,15,15,15">
             <Bold>Want to win exciting discounts or freebies?</Bold><LineBreak/>
             Play Percy's Treasure Hunt now! <LineBreak/>

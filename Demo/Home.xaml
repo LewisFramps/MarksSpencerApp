@@ -34,11 +34,10 @@
                 <StackPanel.Background>
                     <ImageBrush ImageSource="assets/prod1.jpg"/>
                 </StackPanel.Background>
-                <TextBlock Margin="10,10,10,0" Foreground="White" FontSize="40" Padding="0,100,0,0">
+                <TextBlock Margin="10,10,10,0" Foreground="White" FontSize="40" Padding="0,120,0,0">
                     Casual leather shoes
                 </TextBlock>
-                <TextBlock Margin="10,0,10,10" TextWrapping="WrapWithOverflow" FontSize="20" Foreground="White">
-                    Product description<LineBreak/>
+                <TextBlock Margin="10,10,10,10" TextWrapping="WrapWithOverflow" FontSize="20" Foreground="White">
                    Crafted from our refined faux suede, you rely on our Derby shoes for both casual and smarter occasions. They have a classic lace-up fastening!
                 </TextBlock>
             </StackPanel>
@@ -46,11 +45,10 @@
                 <StackPanel.Background>
                     <ImageBrush ImageSource="assets/prod2.jpg"/>
                 </StackPanel.Background>
-                <TextBlock Margin="10,10,10,0" Foreground="White" FontSize="40" Padding="0,100,0,0">
+                <TextBlock Margin="10,10,10,0" Foreground="White" FontSize="40" Padding="0,120,0,0">
                     Derby Shoes
                 </TextBlock>
-                <TextBlock Margin="10,0,10,10" TextWrapping="WrapWithOverflow" FontSize="20" Foreground="White">
-                    Description<LineBreak/>
+                <TextBlock Margin="10,10,10,10" TextWrapping="WrapWithOverflow" FontSize="20" Foreground="White">
                   Crafted from our refined faux suede, you rely on our Derby shoes for both casual and smarter occasions. They have a classic lace-up fastening and our speical Freshfeet finish to help odours at bay.
                 </TextBlock>
             </StackPanel>

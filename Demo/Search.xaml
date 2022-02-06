@@ -29,8 +29,8 @@
                     <Image Height="45" Width="80" Source="assets/more.jpg"/>
                 </StackPanel>
             </StackPanel>
-            <StackPanel>
-                <TextBlock x:Name="TitleBlock" Text="Search results: towel" Margin="0,10,0,0" FontSize="36" Padding="15,15,0,0" Background="White" Height="64"/>
+            <StackPanel Background="FloralWhite">
+                <TextBlock x:Name="TitleBlock" Text="Search results: towel" Margin="0,10,0,0" FontSize="36" Padding="15,15,0,0" Background="FloralWhite" Height="64"/>
                 <DockPanel Margin="20,10,20,0">
                     <TextBlock DockPanel.Dock="Left" FontSize="20" Foreground="#FF606060">▼ Filter</TextBlock>
                     <TextBlock DockPanel.Dock="Left" FontSize="20" Margin="20,0,0,0" Foreground="#FF606060">▼ Sort by</TextBlock>
@@ -41,24 +41,24 @@
                         <StackPanel Orientation="Vertical" Margin="0,0,10,5">
                             <Image x:Name="Image1" Source="assets/towel1.jpg"></Image>
                             <TextBlock x:Name="Title1" Text="Egyptian Towel Luxury" FontWeight="Bold" FontSize="18"></TextBlock>
-                            <TextBlock TextWrapping="Wrap">Snuggle into pure luxry with our Egyptian cotton towel. Fluffy and ultra-plush, this design is perfect for daily use. With its super-soft feel and plush texture, this towel feels like luxury against the skin</TextBlock>
+                            <TextBlock x:Name="Description1" TextWrapping="Wrap">Snuggle into pure luxry with our Egyptian cotton towel. Fluffy and ultra-plush, this design is perfect for daily use. With its super-soft feel and plush texture, this towel feels like luxury against the skin</TextBlock>
                         </StackPanel>
                         <StackPanel Orientation="Vertical" Margin="0,5,10,0">
                             <Image x:Name="Image2" Source="assets/towel2.jpg"></Image>
                             <TextBlock x:Name="Title2" Text="Towel 2" FontWeight="Bold" FontSize="18"></TextBlock>
-                            <TextBlock TextWrapping="Wrap">The lightweight design is absorbent without being heavy, and it dries fast, making it perfect for everyday use.We've added StayNew™ technology to keep your towel looking good as new, wash after wash.</TextBlock>
+                            <TextBlock x:Name="Description2" TextWrapping="Wrap">The lightweight design is absorbent without being heavy, and it dries fast, making it perfect for everyday use.We've added StayNew™ technology to keep your towel looking good as new, wash after wash.</TextBlock>
                         </StackPanel>
                     </StackPanel>
                     <StackPanel Orientation="Vertical" Width="230">
                         <StackPanel Orientation="Vertical" Margin="10,0,0,5" MouseLeftButtonUp="StackPanel3_MouseLeftButtonUp">
                             <Image x:Name="Image3" Source="assets/towel3.jpg"></Image>
                             <TextBlock x:Name="Title3" Text="Towel 3" FontWeight="Bold" FontSize="18"></TextBlock>
-                            <TextBlock TextWrapping="Wrap">Welcome the summer with this beach towel. Made from soft and absorbent pure cotton. Our chlorine resistant StayNew™ technology keeps the colours and finish looking fresh, wash after wash. Our new efficient size is easy to pack.</TextBlock>
+                            <TextBlock x:Name="Description3" TextWrapping="Wrap">Welcome the summer with this beach towel. Made from soft and absorbent pure cotton. Our chlorine resistant StayNew™ technology keeps the colours and finish looking fresh, wash after wash. Our new efficient size is easy to pack.</TextBlock>
                         </StackPanel>
                         <StackPanel Orientation="Vertical" MouseLeftButtonUp="StackPanel4_MouseLeftButtonUp">
                             <Image x:Name="Image4" Source="assets/towel4.jpg"></Image>
                             <TextBlock x:Name="Title4" Text="Towel 4" FontWeight="Bold" FontSize="18"></TextBlock>
-                            <TextBlock TextWrapping="Wrap">Ready to pack your trunk? This green towel features a charming print and is made to our new efficient size, perfect for fitting into a suitcase. Our StayNew™ technology keeps the colours and finish looking fresh.</TextBlock>
+                            <TextBlock x:Name="Description4" TextWrapping="Wrap">Ready to pack your trunk? This green towel features a charming print and is made to our new efficient size, perfect for fitting into a suitcase. Our StayNew™ technology keeps the colours and finish looking fresh.</TextBlock>
                         </StackPanel>
                     </StackPanel>
                 </StackPanel>
