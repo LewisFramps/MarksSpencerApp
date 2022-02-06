@@ -7,11 +7,12 @@
       mc:Ignorable="d" 
       WindowHeight="800" WindowWidth="500"
       d:DesignHeight="800" d:DesignWidth="500"
-      Title="Product">
+      Title="Product"
+      Background="FloralWhite">
 
     <Grid>
-        <DockPanel Background="#FFFFD9F3">
-            <StackPanel Background="#FFFACDF6" Orientation="Horizontal" DockPanel.Dock="Bottom" Margin="10,0,10,0">
+        <DockPanel Background="FloralWhite">
+            <StackPanel Background="white" Orientation="Horizontal" DockPanel.Dock="Bottom" Margin="10,0,10,0">
                 <StackPanel Margin="10" VerticalAlignment="Center" >
                     <Image Height="50" Width="50" Source="assets/logo.png"/>
                 </StackPanel>
@@ -30,7 +31,7 @@
             </StackPanel>
             <ScrollViewer>
                 <StackPanel>
-                    <TextBlock x:Name="TitleBlock" Margin="0,10,0,0" FontSize="36" Padding="15,15,0,0" Background="#FFFACDF6" Height="80" VerticalAlignment="Stretch">
+                    <TextBlock x:Name="TitleBlock" Margin="0,10,0,0" FontSize="36" Padding="15,15,0,0" Background="FloralWhite" Height="80" VerticalAlignment="Stretch">
                 Dyson Hoover
                     </TextBlock>
                     <StackPanel DockPanel.Dock="Top" Margin="10,10,10,10" Height="300">
@@ -39,11 +40,12 @@
                         </StackPanel.Background>
                     </StackPanel>
                     <TextBlock Margin="20" TextWrapping="WrapWithOverflow" FontSize="18">
-                    Here goes product details <LineBreak/>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae neque non odio mattis laoreet in id felis. Aenean quis est rhoncus, rutrum tellus sed, eleifend nisl.
+                    <Bold>Product Description</Bold><LineBreak/>
+                    Marks and Spencers collection <LineBreak/><LineBreak/>
+                    Combine smart style with ultimate comfort in these shoes. Smartstep technology used to insert cusioning into the sole!
                     </TextBlock>
                     <Button Margin="25,0,25,0" Content="Add to Bag" FontSize="22" Click="Button_Click"/>
-                    <TextBlock Margin="20,20,20,10" TextWrapping="WrapWithOverflow" FontSize="32">
+                    <TextBlock Margin="20,20,20,10" TextWrapping="WrapWithOverflow" FontSize="24">
                         Customer Reviews (0)
                     </TextBlock>
                     <TextBlock Margin="20,0,20,0" TextWrapping="WrapWithOverflow" FontSize="18">
@@ -54,10 +56,10 @@
 
             </ScrollViewer>
         </DockPanel>
-        <Border x:Name="Popup" Padding="5" Margin="9,25,9,550" BorderThickness="1" Background="#C0FFFFFF" CornerRadius="15" Visibility="Hidden" MouseLeftButtonUp="Popup_MouseLeftButtonUp">
-            <TextBlock TextWrapping="Wrap"  FontSize="28" Padding="15,15,15,15">
-            <Bold>WANT TO WIN DISCOUNT?</Bold><LineBreak/>
-            Play our Treasure Hunt now! <LineBreak/>
+        <Border x:Name="Popup" Padding="5" Margin="9,25,9,550" BorderThickness="1" Background="White" CornerRadius="15" Visibility="Hidden" MouseLeftButtonUp="Popup_MouseLeftButtonUp">
+            <TextBlock TextWrapping="Wrap"  FontSize="22" Padding="15,15,15,15">
+            <Bold>Want to win exciting discounts or freebies?</Bold><LineBreak/>
+            Play Percy's Treasure Hunt now! <LineBreak/>
             <Hyperlink NavigateUri="https://www.youtube.com/watch?v=dQw4w9WgXcQ" RequestNavigate="Hyperlink_RequestNavigate">
                 Rules...
             </Hyperlink>
